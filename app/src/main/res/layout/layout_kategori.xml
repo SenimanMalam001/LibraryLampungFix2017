@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="8dp">
+
+            <include
+                android:id="@+id/m.agama"
+                layout="@layout/m_buku_agama_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" />
+
+            <include
+                android:id="@+id/m.bisnis"
+                layout="@layout/m_buku_bisnis_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+
+            <include
+                android:id="@+id/m.akuntansi"
+                layout="@layout/m_buku_akutansi_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/m.agama" />
+
+            <include
+                android:id="@+id/m.hukum"
+                layout="@layout/m_buku_hukum_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/m.bisnis" />
+
+            <include
+                android:id="@+id/m.komputer"
+                layout="@layout/m_buku_komputer_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/m.akuntansi" />
+
+            <include
+                android:id="@+id/m.mul"
+                layout="@layout/m_buku_multimedia_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/m.hukum" />
+
+            <include
+                android:id="@+id/m.pendidikan"
+                layout="@layout/m_buku_pendidikan_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/m.komputer" />
+
+            <include
+                android:id="@+id/m.pertanian"
+                layout="@layout/m_buku_pertanian_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/m.mul" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include layout="@layout/layout_button_navigation_view" />
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+     &lt;!&ndash;   <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#E65100">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="#E65100">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="17dp"
+                    android:src="@drawable/logoo" />
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/user" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="Elfin Sanjaya"
+                    android:textColor="#FFF3E0"
+                    android:textSize="23dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="(Mahasiswa Teknokrat)"
+                    android:textColor="#FFF3E0"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="108dp"
+                    android:layout_toRightOf="@+id/logo"
+                    android:text="ID: A1000B"
+                    android:textColor="#FFF3E0"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>&ndash;&gt;
+
+        <include layout="@layout/snippet_top_kategori"/>
+
+</RelativeLayout>
+-->
+</RelativeLayout>
