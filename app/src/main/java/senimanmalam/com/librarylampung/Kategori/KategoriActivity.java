@@ -1,12 +1,14 @@
 package senimanmalam.com.librarylampung.Kategori;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
@@ -18,6 +20,7 @@ import senimanmalam.com.librarylampung.Utils.BottomNavigationViewHelper;
  */
 
 public class KategoriActivity  extends AppCompatActivity{
+
     private static final String TAG = "KategoriActivity";
     private static final int ACTIVITY_NUM =1;
     private Context mContext = KategoriActivity.this;
@@ -30,6 +33,11 @@ public class KategoriActivity  extends AppCompatActivity{
 
         setupBottomNavigationView();
         //setupToolbar();
+    }
+
+    public void btn_agama(View view){
+    Intent intent = new Intent(KategoriActivity.this, ListBukuActivity.class);
+    startActivity(intent);
     }
 
     private void setupToolbar(){
@@ -70,4 +78,11 @@ public class KategoriActivity  extends AppCompatActivity{
         getMenuInflater().inflate(R.menu.kategori_menu, menu);
         return true;
     }
+
+    public void btnagama(View view) {
+        Intent tampil = new Intent(this, ListBukuActivity.class);
+        startActivity(tampil);
+    }
+
+
 }
