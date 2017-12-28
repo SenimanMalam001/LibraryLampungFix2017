@@ -9,18 +9,18 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/gambar"
+            android:id="@+id/menu_gambar"
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/ic_kategori"/>
+            android:src="@drawable/menu_multimedia"/>
 
         <TextView
-            android:id="@+id/judul"
+            android:id="@+id/menu_judul"
             android:textStyle="bold"
             android:textSize="15dp"
             android:layout_marginLeft="10dp"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/gambar"
+            android:layout_toRightOf="@+id/menu_gambar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Buku Android"/>

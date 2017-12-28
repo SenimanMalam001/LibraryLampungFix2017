@@ -67,8 +67,8 @@ public class BukuAdapter extends RecyclerView.Adapter<BukuAdapter.BukuHolder> {
 
         public BukuHolder(View itemView) {
             super(itemView);
-            judul = (TextView) itemView.findViewById(R.id.judul);
-            gambar = (ImageView) itemView.findViewById(R.id.gambar);
+            judul = (TextView) itemView.findViewById(R.id.menu_judul);
+            gambar = (ImageView) itemView.findViewById(R.id.menu_gambar);
         }
     }
 }

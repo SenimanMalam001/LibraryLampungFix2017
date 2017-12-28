@@ -3,8 +3,14 @@ package senimanmalam.com.librarylampung.Kategori;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,8 +30,11 @@ public class ListBukuActivity extends AppCompatActivity {
     List<Buku> list;
     FirebaseDatabase database;
     DatabaseReference myRef;
-
+    ImageView view;
     RecyclerView recyclerView;
+    //baru
+    RecyclerView.LayoutManager layoutManager;
+    //
 
 
     @Override
@@ -53,15 +62,16 @@ public class ListBukuActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
+                Log.w("Hello", "Firebase LOHH Eror Boy.");
             }
         });
 
 
-        BukuAdapter adapter = new BukuAdapter(list, ListBukuActivity.this);
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(ListBukuActivity.this);
-        recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(adapter);
+                BukuAdapter adapter = new BukuAdapter(list, ListBukuActivity.this);
+                RecyclerView.LayoutManager layoutManager = new GridLayoutManager(ListBukuActivity.this,2);
+                recyclerView.setLayoutManager(layoutManager);
+                recyclerView.setItemAnimator(new DefaultItemAnimator());
+                recyclerView.setAdapter(adapter);
+
     }
 }
