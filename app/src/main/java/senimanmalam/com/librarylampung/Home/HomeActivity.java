@@ -42,14 +42,12 @@ public class HomeActivity extends AppCompatActivity {
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
 
-        tabLayout.getTabAt(0).setIcon(R.drawable.ic_bookn);
-        tabLayout.getTabAt(1).setIcon(R.drawable.ic_books);
-
+        tabLayout.getTabAt(0).setText("NEW BOOKS");
+        tabLayout.getTabAt(1).setText("BEST BOOKS");
     }
-
     /*
     *ButtomNavigationView setup
-   */
+    */
     private void setupBottomNavigationView() {
         Log.d(TAG, "setupBottomNavigationView: setting up BottomNabigationView");
         BottomNavigationViewEx bottomNavigationViewEx = (BottomNavigationViewEx) findViewById(R.id.btn_nav_view_bar);
@@ -60,7 +58,5 @@ public class HomeActivity extends AppCompatActivity {
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
     }
-
-
 }
 

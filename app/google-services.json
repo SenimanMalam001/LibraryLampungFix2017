@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "1070564111080",
-    "firebase_url": "https://perpustakaan-6ce6c.firebaseio.com",
-    "project_id": "perpustakaan-6ce6c",
-    "storage_bucket": "perpustakaan-6ce6c.appspot.com"
+    "project_number": "452271052588",
+    "firebase_url": "https://library-97e8f.firebaseio.com",
+    "project_id": "library-97e8f",
+    "storage_bucket": "library-97e8f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1070564111080:android:ea6cde46deafdf44",
+        "mobilesdk_app_id": "1:452271052588:android:a57f926faca2f991",
         "android_client_info": {
           "package_name": "senimanmalam.com.librarylampung"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1070564111080-mde1m58l48lehg11sugqft5cc6bu8qpv.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "senimanmalam.com.librarylampung",
-            "certificate_hash": "7075d62e7694ee2afda91a10db511c1d155758bf"
-          }
-        },
-        {
-          "client_id": "1070564111080-gnp40t0trahsqcr745n5puvo7rde7upc.apps.googleusercontent.com",
+          "client_id": "452271052588-vm4s0lr1qknmbpnegnm12d9je8lkntu8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAA1MBvRtDttExhhcSKw6z4R-RrytHrTsU"
+          "current_key": "AIzaSyDla0e3aepK4-PZXf7h7tEvVdMaBdWHpTw"
         }
       ],
       "services": {
@@ -37,13 +29,8 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1070564111080-gnp40t0trahsqcr745n5puvo7rde7upc.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

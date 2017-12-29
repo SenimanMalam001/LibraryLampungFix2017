@@ -9,10 +9,9 @@ import android.view.ViewGroup;
 
 import senimanmalam.com.librarylampung.R;
 
-/**
+ /*
  * Created by asus on 22/12/2017.
  */
-
 public class BookFragment extends Fragment {
     private static final String TAG = "HomeFragment";
 
@@ -22,4 +21,5 @@ public class BookFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_book, container, false);
 
         return view;
-    }}
+    }
+}

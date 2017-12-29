@@ -9,11 +9,17 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Adapter;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.FirebaseDatabase;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
+
+import java.util.Locale;
 
 import senimanmalam.com.librarylampung.R;
 import senimanmalam.com.librarylampung.Utils.BottomNavigationViewHelper;
+import senimanmalam.com.librarylampung.ViewHolder.MenuViewHolder;
 
 /**
  * Created by asus on 22/12/2017.
@@ -25,6 +31,8 @@ public class KategoriActivity  extends AppCompatActivity{
     private static final int ACTIVITY_NUM =1;
     private Context mContext = KategoriActivity.this;
 
+    FirebaseRecyclerAdapter<Locale.Category,MenuViewHolder> adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,9 +43,10 @@ public class KategoriActivity  extends AppCompatActivity{
         //setupToolbar();
     }
 
-    public void btn_agama(View view){
-    Intent intent = new Intent(KategoriActivity.this, ListBukuActivity.class);
-    startActivity(intent);
+    public void btn_agama(View view, int position, boolean isLongClick){
+        Intent intent = new Intent(KategoriActivity.this, ListBukuActivity.class);
+        intent.putExtra("CategoryId", adapter.getRef(position).getKey());
+        startActivity(intent);
     }
 
     private void setupToolbar(){
@@ -79,7 +88,7 @@ public class KategoriActivity  extends AppCompatActivity{
         return true;
     }
 
-    public void btnagama(View view) {
+    public void btn_agama(View view) {
         Intent tampil = new Intent(this, ListBukuActivity.class);
         startActivity(tampil);
     }
